@@ -196,7 +196,7 @@
     transition: 0.5s;
   }
   .containerNavbarMobile {
-    height: 100vh !important;
+    height: 98vh !important;
     overflow: hidden !important;
    
     transition: all .3s ease-in-out;
@@ -213,7 +213,7 @@
     align-items: center;
     flex-direction: column;
     margin: 0;
-    height: 10vh;
+    height: 9vh;
     transition: all .3s ease-in-out;
   }
   .containerNavbar .divLogoName {
