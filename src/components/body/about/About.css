@@ -133,12 +133,13 @@
     flex-direction: column;
   }
   .leftText {
-    width: 80%;
+    width: 100%;
     padding: 10px;
     text-align: center;
   }
   .rightText {
-    width: 80%;
+    width: 100%;
+    padding: 10px;
     text-align: justify;
     margin: auto;
   }
