@@ -134,12 +134,12 @@
   }
   .leftText {
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
   }
   .rightText {
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     text-align: justify;
     margin: 30px auto;
   }
