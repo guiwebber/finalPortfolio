@@ -55,7 +55,10 @@ function About() {
           </div>
         </div>
         <div className="bottomDiv">
+          <div className="bottomTitle">
           <h3>Diferenciais de trabalhar comigo</h3>
+          <span className="border"></span>
+          </div>
           <div className="oneDiv">
             <div className="fourDivs">
               <div className="fourDivsIcons">
