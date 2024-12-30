@@ -1,0 +1,43 @@
+.textAbout {
+  width: 100%;
+  position: relative;
+  top: 40%;
+}
+
+.leftText {
+  width: 40%;
+  padding: 10px;
+}
+.rightText {
+    padding: 10px;
+  width: 40%;
+}
+.flexDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.bottomDiv {
+    width: 80%;
+    border: 1px solid red;
+    margin: 100px auto;
+}
+@media (max-width: 1000px) {
+    .containerAbout {
+      max-width: 100%;
+    }
+    .backTitle h1 {
+      font-size: 3rem;
+      width: auto;
+      margin: auto;
+      left: 0;
+    }
+    
+    .frontTitle h2 {
+      position: relative;
+      color: white;
+      top: 45px;
+      font-size: 1rem;
+    }
+  }
+  

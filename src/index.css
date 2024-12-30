@@ -1,0 +1,121 @@
+:root {
+  --main-color: #2f2e30;
+  --primary-color: #ffffff;
+  --secondary-color: #dd830d;
+  --tertiary-color: #ccc;
+  /* --tertiary-color: FFB6C1 */
+  --bg-primary: #222222;
+  --bg-secondary: #4d4c4c;
+}
+* {margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-decoration: none;
+}
+html, body {
+  height: 100%;
+}
+
+.bg-primary {
+  background-color: var(--bg-primary);
+}
+.bg-secondary {
+  background-color: var(--bg-secondary);
+}
+
+.container {
+  max-width: 85%;
+  margin-left: auto;
+  height: 100vh;
+}
+
+.title {
+  text-align: center;
+}
+
+.backTitle h1 {
+  color: rgba(143, 143, 143, 0.1);
+  font-size: 8rem;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 85%;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase;
+}
+
+.frontTitle h2 {
+  position: relative;
+  color: white;
+  top: 75px;
+  font-size: 3rem;
+}
+
+.btnDefault {
+  background-color: var(--secondary-color);
+  color: #fff;
+  font-size: 1.3rem;
+  padding: 10px 20px;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: bold;
+  border: 1px solid #FFF;
+  width: 200px;
+  height: 50px;
+
+}
+@media (max-width: 1000px) { 
+  .backTitle h1 {
+    color: rgba(143, 143, 143, 0.1);
+    font-size: 1rem;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 85%;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+  }
+  
+  .frontTitle h2 {
+    position: relative;
+    color: white;
+    top: 75px;
+    font-size: 3rem;
+  }
+}
+
+
+@media (max-width: 1300px) {
+  .containerAbout {
+    max-width: 80%;
+  }
+  .textAbout {
+    width: 100%;
+  }
+  .backTitle h1 {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .backTitle h1 {
+    font-size: 6rem;
+  }
+  .frontTitle h2 {
+    font-size: 2.2rem;
+    top: 65px;
+  }
+}
+
+@media (max-width: 1000px) {
+ 
+  .backTitle h1 {
+    width: 100%;
+  }
+}

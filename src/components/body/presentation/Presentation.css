@@ -1,0 +1,141 @@
+.containerMain {
+  background: linear-gradient(rgba(37, 37, 37, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../../assets/images/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.presentation {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.welcome {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+.job {
+  color: var(--secondary-color);
+}
+.typewriter {
+  font-size: 3rem;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+}
+
+.text {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 2px solid #ffffff;
+  animation: typing 8s steps(21) infinite,
+    blink 0.5s step-end infinite alternate;
+}
+
+.text::before {
+  content: "Desenvolvedor front-end";
+  animation: switchText 16s steps(1, end) infinite;
+}
+
+.divContact .btnContact:hover {
+  letter-spacing: 4px;
+}
+.arrow {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 30px;
+  animation: arrow 2s infinite ease-in-out;
+  height: 50px;
+  width: 50px;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  40% {
+    width: 21ch; /* Digita o texto */
+  }
+  60% {
+    width: 21ch; /* Pausa antes de apagar */
+  }
+  80% {
+    width: 0; /* Apaga o texto */
+  }
+  100% {
+    width: 0; /* Fim do ciclo */
+  }
+}
+
+@keyframes blink {
+  0% {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: #ffffff;
+  }
+  100% {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes arrow {
+  0% {
+    bottom: 30px;
+  }
+  50% {
+    bottom: 10px;
+    color: rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    bottom: 30px;
+  }
+}
+
+@keyframes switchText {
+  0%,
+  50% {
+    content: "Desenvolvedor front-end";
+  }
+  50.01%,
+  100% {
+    content: "Guilherme Ferraz Webber";
+  }
+}
+
+@media (max-width: 1300px) {
+  .containerMain {
+    max-width: 80%;
+  }
+  .text {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 1000px) {
+  .containerMain {
+    max-width: 100%;
+    margin: 0;
+  }
+  .backTitle h1 {
+    font-size: 3rem;
+    width: auto;
+    margin: auto;
+    left: 0;
+  }
+  
+  .frontTitle h2 {
+    position: relative;
+    color: white;
+    top: 45px;
+    font-size: 1rem;
+  }
+}

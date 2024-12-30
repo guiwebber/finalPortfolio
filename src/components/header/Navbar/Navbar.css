@@ -1,0 +1,230 @@
+.containerNavbar {
+  background-color: var(--main-color);
+  width: 15%;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.divLogoName {
+  height: 20vh;
+}
+.divLogo {
+  width: 160px;
+  height: 160px;
+  border: 5px solid var(--tertiary-color);
+  border-radius: 50%;
+  margin: 45px auto 25px auto;
+}
+.divName .name {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.divNav {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.navigation {
+  margin-top: 50px;
+}
+.divNav .navigation .list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.divNav .navigation .list .list-item {
+  margin: 15px;
+}
+.divNav .navigation .list .list-item a {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.social {
+  text-align: center;
+}
+.social a {
+  margin: 10px;
+}
+.icons {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+.icons:hover {
+  color: var(--secondary-color);
+}
+.hamburger {
+  display: none;
+}
+
+.btnDownload {
+ font-size: 1.1rem;
+ font-weight: bold;
+ width: 200px;
+}
+.btnDownload:hover { 
+  letter-spacing: 2px;
+}
+
+.btnDownload:hover {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+
+@media (max-width: 1400px) {
+  .divName {
+    font-size: 0.85rem;
+  }
+  .btnDownload {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    width: 170px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .containerNavbar {
+    width: 20%;
+  }
+}
+@media (max-width: 1000px) {
+  .containerNavbar {
+    width: 80vw;
+    height: 80px;
+    position: fixed;
+    z-index: 11;
+    transition: .5s;
+  }
+  .logo {
+    width: 100px;
+  }
+  .divLogo {
+    display: none;
+  }
+  .divName {
+    font-size: 0.9rem;
+    width: 200px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .containerNavbar {
+    flex-direction: row;
+  }
+  .divNav {
+    display: none;
+  }
+  .social {
+    display: none;
+  }
+
+  .hamburger {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    display: block;
+
+  }
+  .checkbox {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .hamburger span {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 35px;
+    height: 5px;
+    background: linear-gradient(90deg, #ffffff, #646464);
+    transition: 0.5s;
+  }
+  .hamburger span::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    width: 35px;
+    height: 5px;
+    background: linear-gradient(90deg, #ffffff, #646464);
+  }
+  .hamburger span::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    width: 35px;
+    height: 5px;
+    background: linear-gradient(90deg, #ffffff, #646464);
+  }
+
+  .hamburger .checkbox:checked ~ span::before {
+    transform: rotate(275deg);
+    top: 0;
+  }
+  .hamburger .checkbox:checked ~ span::after {
+    top: 0;
+  }
+  .hamburger .checkbox:checked ~ span {
+    transform: rotate(130deg);
+    transition: 0.5s;
+  }
+  .containerNavbarMobile {
+    height: 100%;
+    transition: .5s;
+    overflow: hidden !important;
+    
+  }
+
+  .containerNavbarMobile  .divNav, .containerNavbarMobile .social{
+    display: block;
+  }
+
+  .containerNavbar  {
+    width: 100%;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    height: auto;
+  }
+  .containerNavbar .divLogoName {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+  }
+  .divNav {
+    margin: 0;
+  }
+
+}
+
+@media (max-width: 390px) { 
+ 
+  
+}
