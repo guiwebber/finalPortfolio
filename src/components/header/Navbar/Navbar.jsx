@@ -17,7 +17,7 @@ function Navbar() {
   
     const section = document.getElementById(sectionId);
     if (section) {
-      const offset = window.innerWidth > 1000 ? 0 : 50; 
+      const offset = window.innerWidth > 1000 ? 0 : 60; 
       const topPosition = section.offsetTop - offset; 
       window.scrollTo({
         top: topPosition,
