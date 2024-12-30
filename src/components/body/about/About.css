@@ -1,24 +1,35 @@
 .textAbout {
   width: 100%;
   position: relative;
-  top: 40%;
+  top: 30%;
   display: flex;
   flex-direction: column;
 }
 
 .leftText {
   width: 40%;
-  color: #CCC;
+  color: #ccc;
   padding: 20px;
   font-weight: 500;
 }
 .leftText h2 {
-  color: #FFF;
+  color: #fff;
   margin-bottom: 20px;
 }
 
 .leftText p {
   margin-bottom: 10px;
+}
+
+.emphasis {
+  padding: 10px;
+  color: var(--secondary-color);
+}
+
+.fourDivs {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 .rightText {
   padding: 20px;
@@ -31,54 +42,60 @@
 }
 
 .bottomDiv {
-    width: 50%;
-    margin: 100px auto;
-    border: 1px solid red;
+  width: 50%;
+  margin: 100px auto;
+}
+.bottomDiv h3 {
+  color: var(--secondary-color);
+  margin: auto;
+  text-align: center;
+  padding: 0 0 50px 0;
+}
+.flexDiv {
+  justify-content: space-evenly;
 }
 
 .bold {
   font-weight: bold;
   font-size: 1.1rem;
-  color: #FFF;
+  color: #fff;
 }
 .texts {
-  color:  var(--secondary-color);
+  color: var(--secondary-color);
   width: 450px;
 }
 .texts::after {
-  content: '';
+  content: "";
   width: 300px;
   height: 1px;
-  margin:  10px 0 20px 0;
+  margin: 10px 0 20px 0;
   background-color: rgba(100, 100, 100, 0.5);
-  color: #FFF;
+  color: #fff;
   display: flex;
 }
 @media (max-width: 1000px) {
-    .containerAbout {
-      max-width: 100%;
-    }
-    .containerAbout .backTitle h1 {
-      font-size: 3rem;
-      width: auto;
-      margin: auto;
-      left: 0;
-    }
-    
-    .h2About {
-      position: relative;
-      color: white;
-      top: 40px !important;
-      font-size: 1.2rem !important;
-    }
+  .containerAbout {
+    max-width: 100%;
   }
-  
-
-  @media (max-width: 500px) { 
-    .textAbout {
-      width: 100%;
-      position: relative;
-      top: 10%;
-    }
+  .containerAbout .backTitle h1 {
+    font-size: 3rem;
+    width: auto;
+    margin: auto;
+    left: 0;
   }
 
+  .h2About {
+    position: relative;
+    color: white;
+    top: 40px !important;
+    font-size: 1.2rem !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .textAbout {
+    width: 100%;
+    position: relative;
+    top: 10%;
+  }
+}

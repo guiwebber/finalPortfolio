@@ -28,9 +28,9 @@ function About() {
               cliente.
             </p>
 
-            <p>
-              Estou sempre procurando soluções eficazes e agradáveis para os
-              meus clientes.
+            <p className="emphasis">
+              Criando interfaces com eficiência, performance e uma experiência
+              envolvente.
             </p>
           </div>
           <div className="rightText">
@@ -52,7 +52,20 @@ function About() {
             </p>
           </div>
         </div>
-        <div className="bottomDiv">div</div>
+        <div className="bottomDiv">
+          <h3>Diferenciais de trabalhar comigo</h3>
+          <div className="flexDiv">
+            <div className="fourDivs">
+              <p>SEO Google</p>
+            </div>
+            <div className="fourDivs">
+              <p>Web design</p>
+            </div>
+            <div className="fourDivs">
+              <p>UI/UX Design</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
