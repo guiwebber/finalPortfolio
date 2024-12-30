@@ -26,18 +26,18 @@
     .containerAbout {
       max-width: 100%;
     }
-    .backTitle h1 {
+    .containerAbout .backTitle h1 {
       font-size: 3rem;
       width: auto;
       margin: auto;
       left: 0;
     }
     
-    .frontTitle h2 {
+    .containerAbout .frontTitle h2 {
       position: relative;
       color: white;
-      top: 45px;
-      font-size: 1rem;
+      top: 40px;
+      font-size: 1.2rem;
     }
   }
   
