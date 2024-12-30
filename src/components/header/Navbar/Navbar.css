@@ -74,11 +74,11 @@
 }
 
 .btnDownload {
- font-size: 1.1rem;
- font-weight: bold;
- width: 200px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  width: 200px;
 }
-.btnDownload:hover { 
+.btnDownload:hover {
   letter-spacing: 2px;
 }
 
@@ -86,7 +86,6 @@
   background-color: var(--secondary-color);
   color: #fff;
 }
-
 
 @media (max-width: 1400px) {
   .divName {
@@ -137,8 +136,7 @@
     display: none;
     padding: 20px;
   }
-  .social a .icons{
-    
+  .social a .icons {
     font-size: 2.3rem;
   }
 
@@ -147,7 +145,6 @@
     top: 30px;
     right: 0;
     display: block;
-
   }
   .checkbox {
     position: relative;
@@ -196,17 +193,21 @@
     transition: 0.5s;
   }
   .containerNavbarMobile {
-    height: 95vh !important;
+    height: 100vh !important;
     overflow: hidden !important;
-   
-    transition: all .3s ease-in-out;
+    border: 1px solid red;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
   }
-  
-  .containerNavbarMobile  .divNav, .containerNavbarMobile .social{
+
+  .containerNavbarMobile .divNav,
+  .containerNavbarMobile .social {
     display: block;
   }
 
-  .containerNavbar  {
+  .containerNavbar {
     width: 100%;
     display: flex;
     justify-content: baseline;
@@ -214,7 +215,7 @@
     flex-direction: column;
     margin: 0;
     height: 9vh;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   .containerNavbar .divLogoName {
     display: flex;
@@ -223,11 +224,10 @@
     flex-direction: column;
     height: auto;
   }
-  .containerNavbarMobile  .divNav{
+  .containerNavbarMobile .divNav {
     margin-top: -50px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
 }
