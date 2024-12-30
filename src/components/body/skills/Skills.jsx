@@ -8,7 +8,7 @@ function Skills() {
           <h1>Habilidades</h1>
         </div>
         <div className="frontTitle">
-          <h2>Meus conhecimentos</h2>
+          <h2 className='h2Skills'>Meus conhecimentos</h2>
         </div>
       </div>
       

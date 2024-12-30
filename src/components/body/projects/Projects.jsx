@@ -8,7 +8,7 @@ function Projects() {
           <h1>Portifólio</h1>
         </div>
         <div className="frontTitle">
-          <h2>Alguns dos meus projetos</h2>
+          <h2 className="h2Projects">Alguns dos meus projetos</h2>
         </div>
       </div>
 

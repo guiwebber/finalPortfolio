@@ -54,10 +54,10 @@
     left: 0;
   }
   
-  .containerProjects .frontTitle h2 {
+  .h2Projects{
     position: relative;
     color: white;
-    top: 35px;
-    font-size: 1.2rem;
+    top: 40px !important;
+    font-size: 1.2rem !important;
   }
 }
