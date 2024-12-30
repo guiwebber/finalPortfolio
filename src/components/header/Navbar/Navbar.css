@@ -193,12 +193,9 @@
     transition: 0.5s;
   }
   .containerNavbarMobile {
-    height: 100vh !important;
+    height: 100% !important;
     overflow: hidden !important;
     border: 1px solid red;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     transition: all 0.3s ease-in-out;
   }
 
