@@ -1,9 +1,13 @@
 .textAbout {
   width: 100%;
   position: relative;
-  top: 30%;
+  top: 15%;
   display: flex;
   flex-direction: column;
+  height: 80vh;
+}
+.containerAbout  {
+  height: 100vh;
 }
 
 .leftText {
@@ -89,6 +93,16 @@
   color: #fff;
   display: flex;
 }
+
+@media (max-width: 1600px) { 
+  .containerAbout  {
+    height: 115vh;
+  }
+  .bottomDiv {
+    width: 50%;
+    margin: 60px auto;
+  }
+}
 @media (max-width: 1000px) {
   .textAbout {
     top: 10%;
@@ -129,11 +143,14 @@
     margin: auto;
   }
   .texts::after {
-    width:100% !important;
+    width: 100% !important;
   }
   .texts {
     width: 100%;
   }
+  .bottomDiv {
+    width: 100%;
+   }
 }
 
 @media (max-width: 500px) {
@@ -141,5 +158,20 @@
     width: 100%;
     position: relative;
     top: 10%;
+  }
+  .containerAbout {
+    max-width: 100%;
+    height: 130vh;
+  }
+  .bottomDiv {
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  .containerAbout {
+    height: 150vh;
+  }
+  .rightText {
+    width: 100%;
   }
 }
