@@ -8,7 +8,7 @@ function Contact() {
           <h1>Contatos</h1>
         </div>
         <div className="frontTitle">
-          <h2>Fale comigo</h2>
+          <h2 className='h2Contact'>Fale comigo</h2>
         </div>
       </div>
     </div>
