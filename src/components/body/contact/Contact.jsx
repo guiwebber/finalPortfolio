@@ -2,7 +2,7 @@ import React from 'react'
 import './Contact.css'
 function Contact() {
   return (
-    <div className='container containerContact bg-secondary'>
+    <div id='contact' className='container containerContact bg-secondary'>
         <div className="title">
         <div className="backTitle">
           <h1>Contatos</h1>

@@ -2,7 +2,7 @@ import React from "react";
 import "./Projects.css";
 function Projects() {
   return (
-    <div className="container containerProjects bg-secondary">
+    <div id='portfolio' className="container containerProjects bg-secondary">
       <div className="title">
         <div className="backTitle">
           <h1>Portifólio</h1>

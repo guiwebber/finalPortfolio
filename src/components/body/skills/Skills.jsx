@@ -2,8 +2,8 @@ import React from 'react'
 import './Skills.css'
 function Skills() {
   return (
-    <div className='container containerSkills bg-primary'>
-        <div className="title">
+    <div id='skills' className='container containerSkills bg-primary'>
+        <div  className="title">
         <div className="backTitle">
           <h1>Habilidades</h1>
         </div>
@@ -11,6 +11,7 @@ function Skills() {
           <h2>Meus conhecimentos</h2>
         </div>
       </div>
+      
     </div>
   )
 }
