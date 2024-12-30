@@ -57,13 +57,14 @@
 }
 .social {
   text-align: center;
+  padding: 10px;
 }
 .social a {
   margin: 10px;
 }
 .icons {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   transition: 0.5s;
 }
 .icons:hover {
@@ -74,9 +75,9 @@
 }
 
 .btnDownload {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: bold;
-  width: 200px;
+  width: 230px;
 }
 .btnDownload:hover {
   letter-spacing: 2px;
@@ -95,7 +96,7 @@
     font-size: 0.9rem;
     font-weight: 700;
     letter-spacing: 1px;
-    width: 170px;
+    width: 200px;
   }
 }
 
@@ -195,7 +196,6 @@
   .containerNavbarMobile {
     height: 100% !important;
     overflow: hidden !important;
-    border: 1px solid red;
     transition: all 0.3s ease-in-out;
   }
 

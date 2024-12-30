@@ -8,6 +8,7 @@ function Navbar() {
 
   const handleCheckboxChange = (event) => {
     setIsChecked(event.target.checked);
+    
   };
 
   const handleMenuItemClick = (event, sectionId) => {
@@ -24,8 +25,6 @@ function Navbar() {
       });
     }
   };
-  console.log(innerWidth)
-
   return (
     <div
       className={`containerNavbar ${

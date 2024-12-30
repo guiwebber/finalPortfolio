@@ -3,7 +3,7 @@ import "./About.css";
 
 function About() {
   return (
-    <div id='about' className="container containerAbout bg-primary">
+    <div id="about" className="container containerAbout bg-primary">
       <div className="title">
         <div className="backTitle">
           <h1>Sobre mim</h1>
@@ -15,31 +15,44 @@ function About() {
       <div className="textAbout">
         <div className="flexDiv">
           <div className="leftText">
+            <h2>
+              {" "}
+              Eu sou <span className="name">Guilherme Ferraz Webber</span>, e eu
+              sou desenvolvedor front-end.
+            </h2>
             <p>
-              Sou um desenvolvedor web e mobile com foco em React e React
-              Native. Meu objetivo é entregar soluções inovadoras e acessíveis
-              aos clientes.
+              Sou um desenvolvedor freelancer com foco em React, meu objetivo é
+              entregar soluções inovadoras e acessíveis aos clientes. Meu
+              trabalho é baseado em conversa, análise do mercado, desenho de
+              protótipos e desenvolvimento, juntamente com o feedback do
+              cliente.
             </p>
+
             <p>
-              Meu trabalho é baseado em desenho, desenvolvimento e teste de
-              software. Estou sempre procurando soluções eficazes e agradáveis
-              para os meus clientes.
+              Estou sempre procurando soluções eficazes e agradáveis para os
+              meus clientes.
             </p>
           </div>
           <div className="rightText">
-            <p>
-              Meu nome é Guilherme Webber, e eu sou um entusiasta de tecnologia
-              e inovação.
+            <p className="texts">
+              <span className="bold"> Nome: </span>
+              Guilherme Ferraz Webber
             </p>
-            <p>
-              Atualmente, trabalho como desenvolvedor frontend na empresa XYZ,
-              focando em React e React Native.
+            <p className="texts">
+              <span className="bold"> E-mail: </span>
+              guiz1n.webber@gmail.com
+            </p>
+            <p className="texts">
+              <span className="bold"> Whatsapp: </span>
+              (54) 99140-6029
+            </p>
+            <p className="texts">
+              <span className="bold"> De: </span>
+              Getúlio Vargas - RS
             </p>
           </div>
         </div>
-        <div className="bottomDiv">
-          <p>teste</p>
-        </div>
+        <div className="bottomDiv">div</div>
       </div>
     </div>
   );
