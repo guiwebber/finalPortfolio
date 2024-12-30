@@ -1,6 +1,8 @@
 import React from "react";
 import "./About.css";
 
+import { FaPenRuler, FaDesktop } from "react-icons/fa6";
+import { FaBullhorn } from "react-icons/fa";
 function About() {
   return (
     <div id="about" className="container containerAbout bg-primary">
@@ -54,14 +56,23 @@ function About() {
         </div>
         <div className="bottomDiv">
           <h3>Diferenciais de trabalhar comigo</h3>
-          <div className="flexDiv">
+          <div className="oneDiv">
             <div className="fourDivs">
+              <div className="fourDivsIcons">
+              <FaBullhorn/>
+              </div>
               <p>SEO Google</p>
             </div>
             <div className="fourDivs">
+            <div className="fourDivsIcons">
+              <FaDesktop/>
+            </div>
               <p>Web design</p>
             </div>
             <div className="fourDivs">
+            <div className="fourDivsIcons">
+            <FaPenRuler />
+            </div>
               <p>UI/UX Design</p>
             </div>
           </div>
