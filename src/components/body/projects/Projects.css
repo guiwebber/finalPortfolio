@@ -61,9 +61,3 @@
     font-size: 1.2rem;
   }
 }
-
-@media (max-width: 500px) { 
-  .containerProjects .frontTitle h2 {
-    top: 40px;
-  }
-}

@@ -21,8 +21,3 @@
   }
 
   
-@media (max-width: 500px) { 
-  .containerSkills .frontTitle h2 {
-    top: 40px;
-  }
-}

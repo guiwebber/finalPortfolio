@@ -18,8 +18,4 @@
     }
   }
 
-  @media (max-width: 500px) { 
-    .containerContact .frontTitle h2 {
-      top: 40px;
-    }
-  }
+  
