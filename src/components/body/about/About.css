@@ -141,7 +141,7 @@
     width: 100%;
     padding: 10px;
     text-align: justify;
-    margin: auto;
+    margin: 30px auto;
   }
   .texts::after {
     width: 100% !important;
