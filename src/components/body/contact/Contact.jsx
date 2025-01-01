@@ -31,7 +31,7 @@ function Contact() {
       >
         <div className="contactDiv">
           <div className="leftTextContact">
-            <p>
+            <p className="bold">
               Tem uma empresa ou pretende desenvolver um site? <br />
               Aqui estão minhas informações para entrar em contato!
             </p>

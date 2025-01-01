@@ -3,7 +3,7 @@
 .divProjects {
   width: 100%;
   position: relative;
-  top: 20%;
+  top: 15%;
 }
 .subProjects {
   display: flex;
@@ -13,7 +13,7 @@
 
 .project {
   width: 25%;
-  height: 35rem;
+  height: 30rem;
   margin: 20px;
   border: 1px solid black;
   text-align: center;
@@ -35,13 +35,13 @@
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1300px) { 
   .divProjects {
-    top: 8%;
+    top: 5%;
   }
   .containerProjects {
     max-width: 100%;
-    height: 190vh;
+    height: 200vh;
   }
   .project {
     width: 100%;
@@ -53,6 +53,10 @@
     margin: auto;
     left: 0;
   }
+}
+
+@media (max-width: 1000px) {
+
   
   .h2Projects{
     position: relative;

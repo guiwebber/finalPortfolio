@@ -1,15 +1,15 @@
 import React from "react";
 import "./Presentation.css";
-import brasil from "../../../assets/images/brasil.png";
-import usa from "../../../assets/images/usa.png";
 import { FaAngleDown } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 function Presentation() {
+  const { i18n } = useTranslation();
   return (
     <div id="start" className="container containerMain">
       <div className="presentation">
         <h4 className="welcome">Bem-vindo</h4>
         <div class="typewriter">
-          <span class="text"></span>
+          <span class={`text ${i18n.language}`}></span>
         </div>
         <div className="divContact">
           <button className="btnDefault btnContact">Contate-me</button>
@@ -17,14 +17,7 @@ function Presentation() {
         <div className="arrow">
           <FaAngleDown />
         </div>
-        <div className="languages">
-          <a href="#">
-            <img className="flags" src={brasil} alt="" />
-          </a>
-          <a href="#">
-            <img className="flags" src={usa} alt="" />
-          </a>
-        </div>
+       
       </div>
     </div>
   );

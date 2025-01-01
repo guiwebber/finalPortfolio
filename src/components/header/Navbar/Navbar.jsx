@@ -1,29 +1,37 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import Eu from "../../../assets/images/pic.jpeg";
+import "../../../../i18n";
+import { useTranslation } from "react-i18next";
+import brasil from "../../../assets/images/brasil.png";
+import usa from "../../../assets/images/usa.png";
 import { FaLinkedin, FaGithub, FaWhatsappSquare } from "react-icons/fa";
 
-function Navbar() {
+function Navbar({ about }) {
   const [isChecked, setIsChecked] = useState(false);
 
   const handleCheckboxChange = (event) => {
     setIsChecked(event.target.checked);
-    
   };
 
   const handleMenuItemClick = (event, sectionId) => {
-    event.preventDefault(); 
-    setIsChecked(false); 
-  
+    event.preventDefault();
+    setIsChecked(false);
+
     const section = document.getElementById(sectionId);
     if (section) {
-      const offset = window.innerWidth > 1000 ? 0 : 60; 
-      const topPosition = section.offsetTop - offset; 
+      const offset = window.innerWidth > 1000 ? 0 : 60;
+      const topPosition = section.offsetTop - offset;
       window.scrollTo({
         top: topPosition,
-        behavior: "smooth", 
+        behavior: "smooth",
       });
     }
+  };
+
+  const { t, i18n } = useTranslation();
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
   };
   return (
     <div
@@ -46,13 +54,17 @@ function Navbar() {
               className="list-item"
               onClick={(e) => handleMenuItemClick(e, "start")}
             >
-              <a href="#start">Início</a>
+              <a id="start" href="#start">
+                Início
+              </a>
             </li>
             <li
               className="list-item"
               onClick={(e) => handleMenuItemClick(e, "about")}
             >
-              <a href="#about">Sobre</a>
+              <a id="about" href="#about">
+              {t("about")}
+              </a>
             </li>
             <li
               className="list-item"
@@ -72,11 +84,10 @@ function Navbar() {
             >
               <a href="#contact">Contato</a>
             </li>
-            <li
-              className="list-item"
-              onClick={handleCheckboxChange}
-            >
-              <button className="btnDefault btnDownload">Baixar currículo</button>
+            <li className="list-item" onClick={handleCheckboxChange}>
+              <button className="btnDefault btnDownload">
+                Baixar currículo
+              </button>
             </li>
           </ul>
         </nav>
@@ -100,6 +111,14 @@ function Navbar() {
           type="checkbox"
         />
         <span></span>
+      </div>
+      <div className="languages">
+        <button onClick={() => changeLanguage("en")}>
+          <img className="flags" src={usa} alt="" />
+        </button>
+        <button onClick={() => changeLanguage("pt")}>
+          <img className="flags" src={brasil} alt="" />
+        </button>
       </div>
     </div>
   );

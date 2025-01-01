@@ -39,9 +39,13 @@
     blink 0.5s step-end infinite alternate;
 }
 
-.text::before {
+.text.pt::before {
   content: "Desenvolvedor front-end";
   animation: switchText 16s steps(1, end) infinite;
+}
+
+.text.en::before {
+  content: "Front-end Developer";
 }
 .btnContact {
   margin:auto;
@@ -62,27 +66,8 @@
   width: 50px;
 }
 
-.languages {
-  background-color: rgb(93, 93, 94);
-  padding: 0 10px;
-  position: fixed;
-  right: 0;
-  top: 100px;
-  display: flex;
-  flex-direction: column;
-}
-.languages a {
-  width: 50px;
-  display: flex;
-  justify-content: center;
-}
-.flags {
-  width: 40px;
-}
 
-.flags:hover {
-  width: 45px !important;
-}
+
 
 @keyframes typing {
   0% {

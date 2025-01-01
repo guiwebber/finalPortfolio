@@ -82,6 +82,25 @@
   color: #fff;
 }
 
+.flags {
+  width: 40px;
+  cursor: pointer;
+}
+
+.languages {
+  position: absolute;
+  display: flex;
+  right: -60px;
+  flex-direction: column;
+  background-color: #272727;
+  padding: 10px;
+}
+.languages button {
+  background-color: transparent;
+  border: none;
+}
+
+
 @media (max-width: 1400px) {
   .divName {
     font-size: 0.85rem;
@@ -193,9 +212,27 @@
     transition: all 0.3s ease-in-out;
   }
 
+  .containerNavbarMobile .languages {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #272727;
+    
+    flex-direction: row;
+    justify-content: center;
+  }
+  .containerNavbarMobile .languages button {
+    margin:  0 10px;
+  }
+
   .containerNavbarMobile .divNav,
   .containerNavbarMobile .social {
     display: block;
+  }
+
+  .containerNavbarMobile .social {
+    margin-bottom: 50px;
   }
 
   .containerNavbar {
