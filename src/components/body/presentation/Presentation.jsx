@@ -1,9 +1,11 @@
 import React from "react";
 import "./Presentation.css";
+import brasil from "../../../assets/images/brasil.png";
+import usa from "../../../assets/images/usa.png";
 import { FaAngleDown } from "react-icons/fa";
 function Presentation() {
   return (
-    <div id='start' className="container containerMain">
+    <div id="start" className="container containerMain">
       <div className="presentation">
         <h4 className="welcome">Bem-vindo</h4>
         <div class="typewriter">
@@ -13,7 +15,15 @@ function Presentation() {
           <button className="btnDefault btnContact">Contate-me</button>
         </div>
         <div className="arrow">
-         <FaAngleDown/>
+          <FaAngleDown />
+        </div>
+        <div className="languages">
+          <a href="#">
+            <img className="flags" src={brasil} alt="" />
+          </a>
+          <a href="#">
+            <img className="flags" src={usa} alt="" />
+          </a>
         </div>
       </div>
     </div>

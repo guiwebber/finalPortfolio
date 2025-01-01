@@ -1,4 +1,11 @@
 
+.skillsDiv {
+  width: 100%;
+  position: relative;
+  top: 2%;
+  border: 1px solid red;
+}
+
 @media (max-width: 1000px) {
     .containerSkills {
       max-width: 100%;

@@ -7,6 +7,7 @@ import Projects from './components/body/projects/Projects.jsx'
 import Skills from './components/body/skills/Skills.jsx'
 import Contact from './components/body/contact/Contact.jsx'
 import Footer from './components/footer/Footer.jsx'
+
 function App() {
 
   return (

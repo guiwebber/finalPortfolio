@@ -83,13 +83,13 @@ function Navbar() {
       </div>
       <div className="social">
         <a href="#">
-          <FaGithub className="icons" />
+          <FaGithub className="icons iconGithub" />
         </a>
         <a href="#">
-          <FaWhatsappSquare className="icons" />
+          <FaWhatsappSquare className="icons iconWhatsapp" />
         </a>
         <a href="#">
-          <FaLinkedin className="icons" />
+          <FaLinkedin className="icons iconLinkedin" />
         </a>
       </div>
       <div className="hamburger">

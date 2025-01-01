@@ -62,14 +62,8 @@
 .social a {
   margin: 10px;
 }
-.icons {
-  color: #fff;
-  font-size: 1.7rem;
-  transition: 0.5s;
-}
-.icons:hover {
-  color: var(--secondary-color);
-}
+
+
 .hamburger {
   display: none;
 }

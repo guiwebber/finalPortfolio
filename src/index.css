@@ -70,6 +70,22 @@ html, body {
   height: 50px;
 
 }
+
+.icons {
+  color: #fff;
+  font-size: 1.7rem;
+  transition: 0.5s;
+}
+
+.iconGithub:hover {
+  color: #646464;
+}
+.iconWhatsapp:hover { 
+  color: #6bca53;
+}
+.iconLinkedin:hover { 
+  color: #4275e4;
+}
 @media (max-width: 1000px) { 
   .backTitle h1 {
     color: rgba(143, 143, 143, 0.1);

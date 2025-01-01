@@ -3,10 +3,15 @@ import "./About.css";
 
 import { FaPenRuler, FaDesktop } from "react-icons/fa6";
 import { FaBullhorn } from "react-icons/fa";
+
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 function About() {
   return (
     <div id="about" className="container containerAbout bg-primary">
-      <div className="title">
+      <div
+        className="title"
+      >
         <div className="backTitle">
           <h1>Sobre mim</h1>
         </div>
@@ -14,7 +19,11 @@ function About() {
           <h2 className="h2About">Um pouco sobre mim</h2>
         </div>
       </div>
-      <div className="textAbout">
+      <motion.div 
+        variants={fadeIn("up", 0.1)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.1 }} className="textAbout">
         <div className="flexDiv">
           <div className="leftText">
             <h2>
@@ -56,31 +65,31 @@ function About() {
         </div>
         <div className="bottomDiv">
           <div className="bottomTitle">
-          <h3>Diferenciais de trabalhar comigo</h3>
-          <span className="border"></span>
+            <h3>Diferenciais de trabalhar comigo</h3>
+            <span className="border"></span>
           </div>
           <div className="oneDiv">
             <div className="fourDivs">
               <div className="fourDivsIcons">
-              <FaBullhorn/>
+                <FaBullhorn />
               </div>
               <p>SEO Google</p>
             </div>
             <div className="fourDivs">
-            <div className="fourDivsIcons">
-              <FaDesktop/>
-            </div>
+              <div className="fourDivsIcons">
+                <FaDesktop />
+              </div>
               <p>Web design</p>
             </div>
             <div className="fourDivs">
-            <div className="fourDivsIcons">
-            <FaPenRuler />
-            </div>
+              <div className="fourDivsIcons">
+                <FaPenRuler />
+              </div>
               <p>UI/UX Design</p>
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
