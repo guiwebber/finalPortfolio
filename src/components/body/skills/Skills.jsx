@@ -30,8 +30,9 @@ function Skills() {
     { name: "CSS", progress: 95, icon: csssvg },
     { name: "GitHub", progress: 90, icon: githubsvg },
     { name: "HTML", progress: 98, icon: htmlsvg },
-    { name: "git", progress: 98, icon: gitsvg },
+    { name: "Git", progress: 98, icon: gitsvg },
   ];
+
 
   return (
     <div id="skills" className="containerSkills bg-primary">
@@ -63,7 +64,7 @@ function Skills() {
             ))}
           </div>
 
-          <h1 className="clickTech">Clique nas tecnologias</h1>
+          <h1 className= {`clickTech ${selectedTech !== null && 'novaclasse'}`} >Clique nas tecnologias</h1>
           {selectedTech && ( // Renderiza a barra somente se houver uma tecnologia selecionada
             <div className="divBar">
               <h2>{selectedTech.name}</h2>
