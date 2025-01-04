@@ -10,15 +10,18 @@ import {
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+
+import { useTranslation } from "react-i18next";
 function Contact() {
+  const { t } = useTranslation();
   return (
-    <div id="contact" className="container containerContact bg-secondary">
+    <div id="contact" className="containerContact bg-secondary">
       <div className="title">
         <div className="backTitle">
-          <h1>Contatos</h1>
+          <h1>{t("contact")}</h1>
         </div>
         <div className="frontTitle">
-          <h2 className="h2Contact">Fale comigo</h2>
+          <h2 className="h2Contact">{t("h2contact")}</h2>
         </div>
       </div>
 
@@ -32,18 +35,17 @@ function Contact() {
         <div className="contactDiv">
           <div className="leftTextContact">
             <p className="bold">
-              Tem uma empresa ou pretende desenvolver um site? <br />
-              Aqui estão minhas informações para entrar em contato!
+            {t("h3textContact")}
             </p>
             <div className="informations">
-              <h4>Endereço</h4>
+              <h4>{t("h3address")}</h4>
               <p>Av. Severiano de almeida, 479</p>
               <p>Centro</p>
               <p>Getúlio Vargas - RS</p>
             </div>
 
             <div className="informations">
-              <h4>Contatos</h4>
+              <h4>{t("h3contacts")}</h4>
               <p>
                 <FaPhoneAlt className="df-color" /> (54) 991406029
               </p>
@@ -54,7 +56,7 @@ function Contact() {
             </div>
 
             <div className="informations">
-              <h4>Redes</h4>
+              <h4>{t("h3networks")}</h4>
               <a className="icons iconGithub" href="#">
                 <FaGithub />
               </a>
@@ -66,7 +68,7 @@ function Contact() {
               </a>
             </div>
             <div className="informations">
-              <button className="btnCttWhatsapp">Contato via whatsapp</button>
+              <button className="btnCttWhatsapp">{t("btnWhatsapp")}</button>
             </div>
           </div>
           <div className="rightTextContact">

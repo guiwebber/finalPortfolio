@@ -6,8 +6,10 @@
   flex-direction: column;
   height: 80vh;
 }
-.containerAbout  {
+.containerAbout {
   height: 100vh;
+  width: 85%;
+  margin-left: 15%;
 }
 
 .leftText {
@@ -16,23 +18,9 @@
   padding: 20px;
   font-weight: 500;
 }
-.leftText h2 {
-  color: #fff;
-  margin-bottom: 20px;
-}
-
-.leftText p {
-  margin-bottom: 10px;
-}
-
 .emphasis {
   padding: 10px;
   color: var(--secondary-color);
-}
-
-.rightText {
-  padding: 20px;
-  width: 30%;
 }
 .flexDiv {
   display: flex;
@@ -45,7 +33,7 @@
   margin: 100px auto;
 }
 .bottomDiv h3 {
-  color: #FFF;
+  color: #fff;
   margin: auto;
   text-align: center;
   padding: 10px;
@@ -105,24 +93,23 @@
   color: #fff;
   display: flex;
 }
-
-@media (max-width: 1600px) { 
-  .containerAbout  {
-    height: 115vh;
-  }
-  .bottomDiv {
-    width: 50%;
-    margin: 60px auto;
+@media (max-width: 1400px) {
+  .containerAbout {
+    width: 80%;
+    margin-left: 20%;
   }
 }
+
 @media (max-width: 1000px) {
+  .containerAbout {
+    margin: 0;
+    height: 120vh;
+    width: 100%;
+  }
   .textAbout {
     top: 10%;
   }
-  .containerAbout {
-    max-width: 100%;
-    height: 120vh;
-  }
+
   .containerAbout .backTitle h1 {
     font-size: 3rem;
     width: auto;
@@ -163,7 +150,7 @@
   }
   .bottomDiv {
     width: 100%;
-   }
+  }
 }
 
 @media (max-width: 500px) {
@@ -173,7 +160,6 @@
     top: 10%;
   }
   .containerAbout {
-    max-width: 100%;
     height: 130vh;
   }
   .bottomDiv {

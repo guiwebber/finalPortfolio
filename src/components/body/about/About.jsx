@@ -4,19 +4,24 @@ import "./About.css";
 import { FaPenRuler, FaDesktop } from "react-icons/fa6";
 import { FaBullhorn } from "react-icons/fa";
 
+import { useTranslation } from "react-i18next";
+
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 function About() {
+
+  
+    const { t } = useTranslation();
   return (
-    <div id="about" className="container containerAbout bg-primary">
+    <div id="about" className=" containerAbout bg-primary">
       <div
         className="title"
       >
         <div className="backTitle">
-          <h1>Sobre mim</h1>
+          <h1>{t("about")}</h1>
         </div>
         <div className="frontTitle">
-          <h2 className="h2About">Um pouco sobre mim</h2>
+          <h2 className="h2About">{t("h2about")}</h2>
         </div>
       </div>
       <motion.div 
@@ -28,29 +33,24 @@ function About() {
           <div className="leftText">
             <h2>
               {" "}
-              Eu sou <span className="name">Guilherme Ferraz Webber</span>, e eu
-              sou desenvolvedor front-end.
+              {t("myName1")}<span className="name">Guilherme Ferraz Webber</span>{t("myName2")}
             </h2>
             <p>
-              Sou um desenvolvedor freelancer com foco em React, meu objetivo é
-              entregar soluções inovadoras e acessíveis aos clientes. Meu
-              trabalho é baseado em conversa, análise do mercado, desenho de
-              protótipos e desenvolvimento, juntamente com o feedback do
-              cliente.
+             {t("textAbout")}
             </p>
 
             <p className="emphasis">
-              Criando interfaces com eficiência, performance e uma experiência
-              envolvente.
+             
+              {t("phrase")}
             </p>
           </div>
           <div className="rightText">
             <p className="texts">
-              <span className="bold"> Nome: </span>
+              <span className="bold"> {t("name")} </span>
               Guilherme Ferraz Webber
             </p>
             <p className="texts">
-              <span className="bold"> E-mail: </span>
+              <span className="bold"> {t("email")} </span>
               guiz1n.webber@gmail.com
             </p>
             <p className="texts">
@@ -58,14 +58,14 @@ function About() {
               (54) 99140-6029
             </p>
             <p className="texts">
-              <span className="bold"> De: </span>
+              <span className="bold"> {t("from")} </span>
               Getúlio Vargas - RS
             </p>
           </div>
         </div>
         <div className="bottomDiv">
           <div className="bottomTitle">
-            <h3>Diferenciais de trabalhar comigo</h3>
+            <h3>{t("workWithMe")}</h3>
             <span className="border"></span>
           </div>
           <div className="oneDiv">

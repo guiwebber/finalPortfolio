@@ -5,7 +5,8 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  
+  width: 85%;
+  margin-left: 15%;
 }
 
 .presentation {
@@ -123,17 +124,18 @@
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
+  .containerMain {margin-left: 20%;
+    width: 80%;
+  }
+}
+
+@media (max-width: 1000px) {
   .containerMain {
-    max-width: 80%;
+    width: 100%;
+    margin: 0;
   }
   .text {
     font-size: 2.2rem;
-  }
-}
-@media (max-width: 1000px) {
-  .containerMain {
-    max-width: 100%;
-    margin: 0;
   }
 }

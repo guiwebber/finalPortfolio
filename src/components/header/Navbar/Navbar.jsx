@@ -7,7 +7,7 @@ import brasil from "../../../assets/images/brasil.png";
 import usa from "../../../assets/images/usa.png";
 import { FaLinkedin, FaGithub, FaWhatsappSquare } from "react-icons/fa";
 
-function Navbar({ about }) {
+function Navbar() {
   const [isChecked, setIsChecked] = useState(false);
 
   const handleCheckboxChange = (event) => {
@@ -55,7 +55,7 @@ function Navbar({ about }) {
               onClick={(e) => handleMenuItemClick(e, "start")}
             >
               <a id="start" href="#start">
-                Início
+                {t("start")}
               </a>
             </li>
             <li
@@ -70,23 +70,23 @@ function Navbar({ about }) {
               className="list-item"
               onClick={(e) => handleMenuItemClick(e, "portfolio")}
             >
-              <a href="#portfolio">Portifólio</a>
+              <a href="#portfolio">{t("portfolio")}</a>
             </li>
             <li
               className="list-item"
               onClick={(e) => handleMenuItemClick(e, "skills")}
             >
-              <a href="#skills">Habilidades</a>
+              <a href="#skills">{t("skills")}</a>
             </li>
             <li
               className="list-item"
               onClick={(e) => handleMenuItemClick(e, "contact")}
             >
-              <a href="#contact">Contato</a>
+              <a href="#contact">{t("contact")}</a>
             </li>
             <li className="list-item" onClick={handleCheckboxChange}>
               <button className="btnDefault btnDownload">
-                Baixar currículo
+                {t("download")}
               </button>
             </li>
           </ul>
