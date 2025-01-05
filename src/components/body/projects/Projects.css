@@ -134,9 +134,16 @@
 }
 
 @media (max-width: 1000px) {
+
+  .btnPrevNext:first-of-type {
+    left: 10px;
+  }
+  
+  .btnPrevNext:last-of-type {
+    right: 10px;
+  }
   .projects-container {
     margin-top: 50px;
-    border: 1px solid red;
     width: 400px !important;
     height: 500px !important;
     margin-top: 50px;
