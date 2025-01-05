@@ -134,3 +134,12 @@ a .icons {
     top: 10%;
   }
 }
+
+@media (max-width: 500px) {
+  .canva {
+    width: 60% !important;
+  }
+  .containerContact {
+    height: 125vh;
+  }
+}
