@@ -41,7 +41,12 @@ function Projects() {
           </div>
         </div>
         <div className="divBtn">
-          <button className="btnDefault btnGithub"> {t("btnGithub")}</button>
+          <a href="https://github.com/guiwebber" target="_blank">
+            <button className="btnDefault btnGithub">
+             
+              {t("btnGithub")}
+            </button>
+          </a>
         </div>
       </motion.div>
     </div>

@@ -12,6 +12,15 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 import { useTranslation } from "react-i18next";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, useGLTF } from "@react-three/drei"; // Para controle e carregar o GLTF
+
+function Model() {
+  const { scene } = useGLTF("/3d/old_phone_blue_2.glb"); // Substitua pelo caminho correto do seu arquivo GLB
+
+  return <primitive object={scene} scale={90} />; // Ajuste a escala conforme necessário
+}
+
 function Contact() {
   const { t } = useTranslation();
   return (
@@ -34,9 +43,7 @@ function Contact() {
       >
         <div className="contactDiv">
           <div className="leftTextContact">
-            <p className="bold">
-            {t("h3textContact")}
-            </p>
+            <p className="bold">{t("h3textContact")}</p>
             <div className="informations">
               <h4>{t("h3address")}</h4>
               <p>Av. Severiano de almeida, 479</p>
@@ -57,27 +64,39 @@ function Contact() {
 
             <div className="informations">
               <h4>{t("h3networks")}</h4>
-              <a className="icons iconGithub" href="#">
-                <FaGithub />
+              <a href="https://github.com/guiwebber" target="_blank">
+                <FaGithub className="icons iconGithub" />
               </a>
-              <a className="icons iconWhatsapp" href="#">
-                <FaWhatsappSquare />
+              <a href="https://wa.me/+5554991406029" target="_blank">
+                <FaWhatsappSquare className="icons iconWhatsapp" />
               </a>
-              <a className="icons iconLinkedin" href="#">
-                <FaLinkedin />
+              <a href="https://www.linkedin.com/in/guilherme-webber-00052318a/" target="_blank">
+                <FaLinkedin className="icons iconLinkedin" />
               </a>
             </div>
             <div className="informations">
-              <button className="btnCttWhatsapp">{t("btnWhatsapp")}</button>
+              <a href="https://wa.me/+5554991406029" target="_blank">
+                <button className="btnCttWhatsapp">{t("btnWhatsapp")}</button>
+              </a>
             </div>
           </div>
+
           <div className="rightTextContact">
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Accusantium excepturi esse nisi placeat, perspiciatis culpa vitae
-              qui quae saepe quos iste aspernatur aliquam eum aliquid sit. Sit
-              voluptatem tempore excepturi?
-            </p>
+            <div className="modelContainer">
+              {/* Integrando o modelo 3D dentro da div */}
+              <Canvas
+                className="canva"
+                camera={{
+                  position: [25, 66, 66], // Posição da câmera (ajustada para distância maior)
+                  fov: 120, // Campo de visão
+                }}
+              >
+                <ambientLight intensity={4} /> {/* Luz ambiente */}
+                <pointLight position={[10, 10, 10]} /> {/* Luz pontual */}
+                <Model /> {/* Componente que renderiza o modelo 3D */}
+                {/* Controle da câmera */}
+              </Canvas>
+            </div>
           </div>
         </div>
       </motion.div>

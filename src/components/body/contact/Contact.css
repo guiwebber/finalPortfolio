@@ -67,6 +67,10 @@
   font-weight: 500;
 }
 
+.canva {
+  height: 400px !important;
+}
+
 @media (max-width: 1400px) {
   .containerContact {margin-left: 20%;
     width: 80%;
@@ -74,9 +78,16 @@
 }
 
 @media (max-width: 1000px) {
+
+  .canva {
+    width: 50% !important;
+    margin: auto;
+    height: 300px !important; 
+  }
+
   .containerContact {
     width: 100%;
-
+    height: 105vh;
     margin-left: 0%;
   }
   .containerContact .backTitle h1 {
@@ -98,12 +109,12 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+
   }
-  .rightTextContact {
+  .rightTextContact, .leftTextContact {
     width: 100%;
-  }
-  .leftTextContact {
-    width: 100%;
+    padding: 0;
+    margin: 0;
   }
   .flexContact {
     top: 10%;
