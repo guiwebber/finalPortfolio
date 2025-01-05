@@ -64,7 +64,7 @@ function Skills() {
             ))}
           </div>
 
-          <h1 className= {`clickTech ${selectedTech !== null && 'novaclasse'}`} >Clique nas tecnologias</h1>
+          <h1 className= {`clickTech ${selectedTech !== null && 'novaclasse'}`} >{t("click")}</h1>
           {selectedTech && ( // Renderiza a barra somente se houver uma tecnologia selecionada
             <div className="divBar">
               <h2>{selectedTech.name}</h2>

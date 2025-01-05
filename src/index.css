@@ -7,7 +7,8 @@
   --bg-primary: #222222;
   --bg-secondary: #4d4c4c;
 }
-* {margin: 0;
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   list-style: none;
@@ -16,7 +17,8 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-decoration: none;
 }
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -67,10 +69,9 @@ html, body {
   cursor: pointer;
   transition: 0.5s;
   font-weight: bold;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   width: 200px;
   height: 50px;
-
 }
 
 .icons {
@@ -82,13 +83,30 @@ html, body {
 .iconGithub:hover {
   color: #646464;
 }
-.iconWhatsapp:hover { 
+.iconWhatsapp:hover {
   color: #6bca53;
 }
-.iconLinkedin:hover { 
+.iconLinkedin:hover {
   color: #4275e4;
 }
-@media (max-width: 1000px) { 
+
+body::-webkit-scrollbar {
+  width: 10px; /* Largura da barra de rolagem */
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #222222;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #888; /* Cor do "polegar" */
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Cor ao passar o mouse */
+}
+@media (max-width: 1000px) {
   .backTitle h1 {
     color: rgba(143, 143, 143, 0.1);
     font-size: 1rem;
@@ -99,7 +117,7 @@ html, body {
     right: 0;
     text-transform: uppercase;
   }
-  
+
   .frontTitle h2 {
     position: relative;
     color: white;
@@ -107,9 +125,6 @@ html, body {
     font-size: 3rem;
   }
 }
-
-
-
 
 @media (max-width: 1100px) {
   .backTitle h1 {
@@ -122,7 +137,6 @@ html, body {
 }
 
 @media (max-width: 1000px) {
- 
   .backTitle h1 {
     width: 100%;
   }

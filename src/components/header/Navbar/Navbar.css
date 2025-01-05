@@ -100,6 +100,10 @@
   border: none;
 }
 
+.social a .icons {
+  font-size: 2.5rem;
+}
+
 
 @media (max-width: 1400px) {
   .containerNavbar {
@@ -153,9 +157,7 @@
     display: none;
     padding: 20px;
   }
-  .social a .icons {
-    font-size: 2.3rem;
-  }
+  
 
   .hamburger {
     position: absolute;
