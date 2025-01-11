@@ -3,7 +3,11 @@ import "./Projects.css";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import { useTranslation } from "react-i18next";
-
+import leftArrow from "../../../assets/images/left-arrow-svgrepo-com.svg";
+import rightArrow from "../../../assets/images/right-arrow-svgrepo-com.svg";
+import Valoguide from "../../../assets/images/valoguide.png";
+import firstPortfolio from "../../../assets/images/firstPortfolio.png";
+import cardInteractive from "../../../assets/images/cardInteractive.png";
 function Projects() {
   const [currentProject, setCurrentProject] = useState(0);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth); // Largura da tela
@@ -28,9 +32,24 @@ function Projects() {
 
   // Definindo os projetos com dados de exemplo
   const projects = [
-    { title: t("titleProject1"), description: t("descriptionProject1"), img: "https://via.placeholder.com/150" },
-    { title: t("titleProject2"), description: t("descriptionProject2"), img: "https://via.placeholder.com/150" },
-    { title: t("titleProject3"), description: t("descriptionProject3"), img: "https://via.placeholder.com/150" },
+    {
+      title: t("Valorant guide"),
+      description: t("descriptionProject1"),
+      img: Valoguide,
+      linkProject: "https://valorantguide2-0.vercel.app/",
+    },
+    {
+      title: t("titleProject2"),
+      description: t("descriptionProject2"),
+      img: firstPortfolio,
+      linkProject: "https://guiwebber.vercel.app/",
+    },
+    {
+      title: t("titleProject3"),
+      description: t("descriptionProject3"),
+      img: cardInteractive,
+      linkProject: "https://interactive-card-form-six.vercel.app/",
+    },
   ];
 
   return (
@@ -52,16 +71,24 @@ function Projects() {
         className="divProjects"
       >
         <div className="subProjects">
-          <button className="btnPrevNext" onClick={handlePrev}>left</button>
-
           <div className="projects-container">
+            <button className="btnPrevNext" onClick={handlePrev}>
+              <img className="arrows" src={leftArrow} alt="" />
+            </button>
             {projects.map((project, index) => (
               <div
                 key={index}
                 className={`project project${index + 1}`}
                 style={{
                   zIndex: currentProject === index ? 1 : 0,
-                  opacity: screenWidth < 1000 ? currentProject === index ? 1 : 0 : currentProject === index ? 1 : 0.1,
+                  opacity:
+                    screenWidth < 1000
+                      ? currentProject === index
+                        ? 1
+                        : 0
+                      : currentProject === index
+                      ? 1
+                      : 0.1,
                   // Ajuste do left com base na tela
                   left:
                     screenWidth < 1000
@@ -78,14 +105,26 @@ function Projects() {
                   transition: "all 0.5s ease",
                 }}
               >
-                <img src={project.img} alt={`Project ${index + 1}`} />
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
+                <img
+                  className="imgProject"
+                  src={project.img}
+                  alt={`Project ${index + 1}`}
+                />
+                <div className="subDivProject">
+                  <h3 className="titleProject">{project.title}</h3>
+                  <p>{project.description}</p>
+                  <button className="btnDefault btnProject">
+                    <a target="_blank" href={project.linkProject}>
+                      Link para o projeto
+                    </a>
+                  </button>
+                </div>
               </div>
             ))}
+            <button className="btnPrevNext" onClick={handleNext}>
+              <img className="arrows" src={rightArrow} alt="" />
+            </button>
           </div>
-
-          <button className="btnPrevNext" onClick={handleNext}>right</button>
         </div>
       </motion.div>
     </div>

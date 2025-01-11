@@ -9,8 +9,6 @@
   top: 15%;
 }
 
-
-
 .divBtn {
   text-align: center;
 }
@@ -23,10 +21,6 @@
   letter-spacing: 2px;
 }
 
-.btnPrevNext {
-  width: 35px;
-  height: 35px;
-}
 .subProjects {
   display: flex;
   align-items: center;
@@ -39,7 +33,6 @@
   width: 100%;
   height: 100%;
 }
-
 
 .project {
   position: absolute;
@@ -58,46 +51,65 @@
   margin-bottom: 10px;
 }
 
-.project h3 {
-  font-size: 18px;
-}
-
 .project p {
   font-size: 14px;
+  width: 100%;
+  height: 300px !important;
+  display: flex;
+  align-items: center;
+}
+.arrows {
+  width: 30px;
 }
 
 .btnPrevNext {
-  position: absolute;
-  top: 50%;
   transform: translateY(-50%);
-  background-color: black;
-  border: none;
+  background-color: transparent;
   font-size: 18px;
   cursor: pointer;
-  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 3px solid var(--secondary-color);
+  color: var(--secondary-color);
+  transition: 0.5s;
+}
+.btnPrevNext:hover {
+  background-color: var(--main-color);
 }
 
 .btnPrevNext:first-of-type {
-  top: 30vh; 
+  top: 30vh;
   position: absolute;
-  left: 20px;
+  left: -20px;
+  padding-right: 5px;
 }
 
 .btnPrevNext:last-of-type {
-  top: 30vh; 
+  top: 30vh;
   position: absolute;
-  right: 20px;
+  right: -20px;
+  padding-left: 5px;
 }
 
 .project {
   width: 50%;
-  height: 30rem;
-  border: 1px solid rgb(255, 255, 255);
+  height: 33rem;
+  border: 2px solid var(--secondary-color);
   padding: 10px;
   border-radius: 20px;
   margin-left: 25%;
+  background-color: var(--main-color);
+  color: white;
 }
-
+.imgProject {
+  width: 100% !important;
+  height: 50% !important;
+  border-radius: 20px;
+}
 
 .projects-container {
   position: relative;
@@ -111,6 +123,37 @@
   position: relative;
   overflow: hidden;
 }
+.subDivProject {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 230px;
+}
+.titleProject {
+  color: #fff;
+  font-size: 1.5rem !important;
+  margin-top: -10px;
+}
+.btnProject {
+  font-size: 1rem;
+  margin: 10px;
+  background-color: transparent;
+  border: 3px solid var(--secondary-color);
+  letter-spacing: 0;
+}
+.btnProject a {
+  color: var(--secondary-color);
+}
+
+.btnProject:hover {
+  background-color: var(--secondary-color);
+  border-color: white;
+}
+
+.btnProject:hover > a {
+  color: white;
+}
 
 @media (max-width: 1400px) {
   .containerProjects {
@@ -120,6 +163,13 @@
   .project {
     width: 60%;
     margin-left: 20%;
+  }
+  .btnPrevNext:first-of-type {
+    left: -70px;
+  }
+
+  .btnPrevNext:last-of-type {
+    right: -70px;
   }
 }
 @media (max-width: 1200px) {
@@ -131,42 +181,50 @@
     width: 80% !important;
     margin-left: 10%;
   }
+  .btnPrevNext:first-of-type {
+    left: -120px;
+  }
+
+  .btnPrevNext:last-of-type {
+    right: -120px;
+  }
 }
 
 @media (max-width: 1000px) {
-
+  .btnPrevNext {
+    border: none;
+  }
   .btnPrevNext:first-of-type {
     left: 10px;
+    z-index: 22;
+    top: 0;
   }
-  
+
   .btnPrevNext:last-of-type {
     right: 10px;
+    z-index: 22;
+    top: 0;
   }
   .projects-container {
     margin-top: 50px;
-    width: 400px !important;
-    height: 500px !important;
-    margin-top: 50px;
+    width: 100%;
+    text-align: center;
   }
 
   .project {
-    width: 400px !important;
-    height: 500px !important;
-    margin: auto;
+    width: 90% !important;
+    margin: 30px 0 0 20px;
   }
   .divProjects {
     top: 5%;
   }
-  
+
   .containerProjects {
     max-width: 100%;
     width: 100%;
     margin-left: 0%;
   }
-  .project {
-    width: 100%;
-    height: 25rem;
-  }
+
   .containerProjects .backTitle h1 {
     font-size: 3rem;
     width: auto;
@@ -182,13 +240,4 @@
 }
 
 @media (max-width: 540px) {
-  .projects-container {
-    width: 300px !important;
-    height: 500px !important;
-  }
-
-  .project {
-    width: 300px !important;
-    height: 500px !important;
-  }
- }
+}

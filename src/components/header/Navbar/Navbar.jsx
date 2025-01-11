@@ -17,18 +17,19 @@ function Navbar() {
   const handleMenuItemClick = (event, sectionId) => {
     event.preventDefault();
     setIsChecked(false);
-
+  
     const section = document.getElementById(sectionId);
     if (section) {
-      const offset = window.innerWidth > 1000 ? 0 : 60;
+      const offset = window.innerWidth > 1000 ? 0 : 60; // Ajuste baseado na largura da tela
       const topPosition = section.offsetTop - offset;
+  
       window.scrollTo({
         top: topPosition,
         behavior: "smooth",
       });
     }
   };
-
+  
   const { t, i18n } = useTranslation();
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
@@ -54,7 +55,7 @@ function Navbar() {
               className="list-item"
               onClick={(e) => handleMenuItemClick(e, "start")}
             >
-              <a id="start" href="#start">
+              <a  href="#start">
                 {t("start")}
               </a>
             </li>
@@ -62,7 +63,7 @@ function Navbar() {
               className="list-item"
               onClick={(e) => handleMenuItemClick(e, "about")}
             >
-              <a id="about" href="#about">
+              <a  href="#about">
                 {t("about")}
               </a>
             </li>

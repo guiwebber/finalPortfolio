@@ -23,13 +23,13 @@
 
   "workWithMe": "Diferenciais de trabalhar comigo",
 
-  "titleProject1": "Título do projeto 1",
-  "titleProject2": "Título do projeto 2",
-  "titleProject3": "Título do projeto 3",
+  "titleProject1": "Valorant Guide",
+  "titleProject2": "Portifólio Gui Webber",
+  "titleProject3": "Cartão interativo",
 
-  "descriptionProject1": "Descrição do primeiro projeto, falando como o criei, quais tecnologias utilizei, etc.",
-  "descriptionProject2": "Descrição do segundo projeto, falando como o criei, quais tecnologias utilizei, etc.",
-  "descriptionProject3": "Descrição do terceiro projeto, falando como o criei, quais tecnologias utilizei, etc.",
+  "descriptionProject1": "O Valorant Guide é um projeto criado para reunir informações e curiosidades sobre o jogo Valorant. Desenvolvido com ReactJS e CSS, o guia oferece conteúdo sobre agentes, habilidades, mapas e armas, com o objetivo de ajudar jogadores a melhorar seu desempenho. A interface é simples e intuitiva, proporcionando fácil acesso às informações, tanto para iniciantes quanto para jogadores experientes.",
+  "descriptionProject2": "Este projeto foi o primeiro portfólio que criei, marcando um grande aprendizado durante sua construção. Entre erros e acertos, ganhei muita experiência no uso de ReactJS e CSS, além de melhorar minhas habilidades em design e resolução de problemas. Foi uma oportunidade valiosa para crescer como desenvolvedor e consolidar conhecimentos importantes na criação de interfaces dinâmicas.",
+  "descriptionProject3": "O projeto foi um cartão interativo e dinâmico desenvolvido com JavaScript, onde as informações são atualizadas em tempo real conforme o usuário digita. Utilizei manipulação do DOM e eventos em JavaScript para garantir que as alterações acontecessem de forma fluida e instantânea. Foi uma ótima oportunidade para aprimorar minhas habilidades em JavaScript e criar interfaces mais interativas.",
 
   "btnGithub": "Link para o githbub",
   "btnWhatsapp": "Contact via whatsapps",

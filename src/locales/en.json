@@ -24,12 +24,12 @@
 
   "workWithMe": "Differences in working with me",
 
-  "titleProject1": "Title Project 1",
-  "titleProject2": "Title Project 2",
-  "titleProject3": "Title Project 3",
-  "descriptionProject1": "Description of the first project, talking about how I created it, what technologies I used, etc.",
-  "descriptionProject2": "Description of the second project, talking about how I created it, what technologies I used, etc.",
-  "descriptionProject3": "Description of the third project, talking about how I created it, what technologies I used, etc.",
+  "titleProject1": "Valorant Guide",
+  "titleProject2": "Portfolio Gui Webber",
+  "titleProject3": "Interactive card",
+  "descriptionProject1": "The Valorant Guide is a project created to gather information and trivia about the game Valorant. Developed with ReactJS and CSS, the guide offers content on agents, abilities, maps, and weapons, aiming to help players improve their performance. The interface is simple and intuitive, providing easy access to information for both beginners and experienced players.",
+  "descriptionProject2": "This project was the first portfolio I created, marking significant learning throughout its development. Through trial and error, I gained a lot of experience with ReactJS and CSS, while also improving my skills in design and problem-solving. It was a valuable opportunity to grow as a developer and solidify important knowledge in creating dynamic interfaces.",
+  "descriptionProject3": "The project was an interactive and dynamic card developed with JavaScript, where the information is updated in real-time as the user types. I used DOM manipulation and events in JavaScript to ensure the changes happened smoothly and instantly. It was a great opportunity to improve my JavaScript skills and create more interactive interfaces.",
 
   "btnGithub": "Link to githbub",
   "h3textContact": "Do you have a company or want to develop a website? Here is my contact information!",
